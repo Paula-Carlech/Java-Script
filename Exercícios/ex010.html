@@ -11,13 +11,27 @@
             padding: 15px;
             font: normal 1.5em Arial;
         }
+
+        h1{
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        input{
+            width: 50px;
+            text-align: center;
+        }
+
+        input#button{
+            width: auto;
+        }
     </style>
 </head>
 <body>
     <h1>Sistemas de Multas</h1>
     Velocidade do carro: <input type="number" name="txtvel" id="txtvel"> Km/h
 
-    <input type="button" value="Verificar" onclick="calcular()">
+    <input type="button" value="Verificar" id="button" onclick="calcular()">
     <div id="res"></div>
 
     <script>
