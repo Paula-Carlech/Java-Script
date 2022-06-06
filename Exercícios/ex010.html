@@ -7,9 +7,17 @@
     <title>DETRAN</title>
     <style>
         body{
-            background: rgba(255, 166, 0, 0.534);
+            background: rgba(255, 251, 0, 0.534);
             padding: 15px;
             font: normal 1.5em Arial;
+        }
+
+        div#principal{
+            background: white;
+            padding: 15px;
+            width: 600px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.274);
         }
 
         h1{
@@ -28,11 +36,12 @@
     </style>
 </head>
 <body>
-    <h1>Sistemas de Multas</h1>
-    Velocidade do carro: <input type="number" name="txtvel" id="txtvel"> Km/h
-
-    <input type="button" value="Verificar" id="button" onclick="calcular()">
-    <div id="res"></div>
+    <div id="principal">
+        <h1>Sistemas de Multas</h1>
+        Velocidade do carro: <input type="number" name="txtvel" id="txtvel"> Km/h
+        <input type="button" value="Verificar" id="button" onclick="calcular()">
+        <div id="res"></div>
+    </div>
 
     <script>
         var txtvel = window.document.getElementById('txtvel')
